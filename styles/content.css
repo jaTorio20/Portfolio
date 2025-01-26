@@ -1,3 +1,7 @@
+.web-dev{
+  font-size: 32px;
+  font-weight: 600;
+}
 
 .container{
   display: flex;
@@ -15,10 +19,20 @@
 }
 
 .about-paragraph{
-  text-align: center;
-  
+  text-align: center; 
+}
+
+.about-third-paragraph{
+  text-align: justify;
+  margin-bottom: 40px;
+
 }
 
 .about-image{
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
+}
+
+.about-details li{
+  margin-bottom: 5px;
+  margin-top: 5px;
 }
