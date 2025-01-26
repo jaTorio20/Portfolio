@@ -41,16 +41,18 @@
 
     <div class="div-toggle-button">
       <button id="toggle-btn" class="toggle-button m-3 " >
-        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+        <!-- <svg id="list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg>
+        </svg> -->
+        <i id="list-icon" class="bi bi-list"></i>
+        <i id="x-icon" class="x-button bi-x d-none"></i>
         
       </button>
       
     </div>
 
 <!-- sidebar -->
-<nav id="sidebar" class="">
+<nav id="sidebar" >
 
   <div class="sidebar-container">
       <div class="div-cover-photo">
@@ -98,7 +100,7 @@
             </svg>
           </div>
           <div>
-            <a  class="" href="#home">Home</a>
+            <a  class="" href="#">Home</a>
           </div>
         </div>
       </li>
@@ -156,6 +158,7 @@
 <!-- sidebar -->
 
 <!-- About me Content -->
+ <div class="main-content">
 <div class="container-fluid bg-light" id="about">
   <div class="container p-2 ">
       <div class="about-container">
@@ -163,14 +166,14 @@
             <h2>About</h2>
           </div>
 
-          <div class="about-me pb-5 ">
+          <div class="about-me pb-4 ">
             <p class="about-paragraph">Hi, <b>I'm John Ashley Torio,</b> a 4th-year student specializing in web and mobile application. I am passionate about building dynamic, user-friendly websites and
             applications using technologies like HTML, CSS, JavaScript, and frameworks like Bootstrap
             </p>
           </div>
 
           <div class="row ">
-            <div class="col-md-10 col-lg-4 mb-4 mt-2">
+            <div class="col-md-10 col-lg-4 mb-5 mt-2">
               <img src="icons/john-torio.jpg" class="about-image img-fluid rounded " alt="...">
             </div>
             <div class="col-lg-8 col-md-12 "> 
@@ -184,7 +187,7 @@
               </p>
 
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="first-details col-lg-6 col-md-12">
                     <ul class="about-details">
                       <li><b>Birthday:</b>
                       <text>November 2002</text></li>
@@ -200,7 +203,7 @@
                     </ul>
 
                   </div>
-                  <div class="col-6 mb-4">
+                  <div class="col-lg-6 col-md-12 mb-4">
                     <ul class="about-details">
                       <li><b>Degree:</b>
                       <text>Bachelor's of Science in Information Technology (BSIT)</text></li>
@@ -222,8 +225,6 @@
                       my career, I am constantly honing my skills in <b>HTML, CSS, BootStrap Framework, JavaScript, and back-end
                        programming like PHP and MySQL.</b> I take pride in my ability to adapt and learn quickly,
                         and I look forward to applying my knowledge to meaningful projects in the future.
-                         With a focus on growth and innovation, I am excited to build a strong foundation
-                          that will enable me to contribute to impactful and cutting-edge developments in the tech world.
                 </p>
             </div>
           </div>
@@ -266,6 +267,7 @@
     <h1>Welcome to the Content Area</h1>
     <p>This is the main content of the page. Click the button to toggle the sidebar.</p>
   </div>
+</div>
 </div>
 
 

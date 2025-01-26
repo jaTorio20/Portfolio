@@ -32,6 +32,10 @@
   box-shadow: 0 0px 8px rgba(0, 0, 0, 0.8);
 }
 
+.first-details{
+  margin-bottom: -16px;
+}
+
 .about-details li{
   margin-bottom: 5px;
   margin-top: 5px;

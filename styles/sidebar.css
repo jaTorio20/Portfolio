@@ -22,6 +22,16 @@ body{
   position: fixed;
   
 }
+
+  /* this is important for adjusting the margin if you have 
+  sidebar that has transition and transform */
+  @media (min-width: 1268px) {
+    .main-content{
+      margin-left: 290px;
+    }
+    
+  }
+
 #sidebar ul {
   padding: 0;
   list-style: none;
@@ -96,11 +106,15 @@ body{
   align-items: center;
   border: none;
   cursor: pointer;
-  padding: 4px;
   background-color: #000416;
   margin-left: 10px;
   border-radius: 100%;
- } 
+  z-index: 1;
+  color: white;
+  font-size: 20px;
+ }
+
+ 
 
 
  /* Socials Icon Link */
