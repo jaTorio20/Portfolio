@@ -5,6 +5,11 @@
 
 .container{
   display: flex;
+
+}
+
+.container-resume{
+  border-bottom: 1px solid black;
 }
 
 .about-container{

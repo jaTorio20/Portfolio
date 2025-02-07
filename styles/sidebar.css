@@ -88,9 +88,11 @@ body{
 
 .profile-photo{
 
-  height: 140px;
+  height: 110px;
   border-radius: 100%;
-  box-shadow: 0 0 10px rgba(141, 141, 141, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  /* box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); */
   margin-bottom: 10px;
 }
 
