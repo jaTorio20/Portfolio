@@ -117,6 +117,12 @@ padding-bottom: 15px;
   font-size: 15px;
 }
 
+@media (max-width: 460px) {
+  .p-break{
+    line-height: 24px;
+  }
+}
+
 .home-bottom{
   padding-top: 20%;
   position: relative;
