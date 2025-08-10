@@ -30,8 +30,6 @@ updateSidebarVisibility();
 
 
 
-
-// Listen for window resize events to handle changes in screen size
 window.addEventListener('resize', updateSidebarVisibility);
 // Toggle sidebar visibility when the button is clicked (only below medium size)
 toggleBtn.addEventListener('click', () => {
@@ -40,17 +38,16 @@ toggleBtn.addEventListener('click', () => {
   xIcon.classList.toggle('d-none');
 });
 
-// Hide sidebar when clicked (only if the toggle button hasn't been clicked)
-sidebar.addEventListener('click', (event) => {
-  // Prevent hiding when clicking inside the sidebar (to avoid accidental close)
-  event.stopPropagation();
-
-  // Close the sidebar when clicked anywhere outside
-  if (sidebar.classList.contains('active') && isBelowMedium()) {
-    sidebar.classList.remove('active');
-    listIcon.classList.remove('d-none');
-    xIcon.classList.add('d-none');
-  }
+document.querySelectorAll('.anchor-sidebar').forEach(link => {
+  link.addEventListener('click', function() {
+    setTimeout(() => {
+      if (sidebar.classList.contains('active') && isBelowMedium()) {
+        sidebar.classList.remove('active');
+        listIcon.classList.remove('d-none');
+        xIcon.classList.add('d-none');
+      }
+    }, 100);
+  });
 });
 
 // Ensure the toggle button works only when clicked
