@@ -6,14 +6,14 @@ const downloadResume = document.getElementById('downloadResume');
     }
   });
 
-  const viewResume = document.getElementById('viewResume');
+  // const viewResume = document.getElementById('viewResume');
 
-  viewResume.addEventListener('click', function(event){
+  // viewResume.addEventListener('click', function(event){
 
-  const downloadConfirm = confirm("This view is just an image generator only. View?");
+  // const downloadConfirm = confirm("This view is just an image generator only. View?");
 
-    if (!downloadConfirm) {
+  //   if (!downloadConfirm) {
 
-      event.preventDefault(); 
-    }
-  });
+  //     event.preventDefault(); 
+  //   }
+  // });

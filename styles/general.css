@@ -1,4 +1,5 @@
 body{
   font-family: Roboto;
-  
+  z-index: -100;
+  background: none;
 }

@@ -44,7 +44,6 @@ body{
 #sidebar ul li a {
   color: #cecece;
   text-decoration: none;
-  transition: 0.3s;
    
 }
 
@@ -54,11 +53,35 @@ body{
   text-shadow: 0 0 13px rgba(255, 255, 255, 0.8);
 }
 
-#sidebar ul li a:active {
-  color: #f80000;
-  text-decoration: none;
+
+.underline{
+  /* transition: 0.4s; */
+  transition: transform 0.6s ease;
 }
 
+.underline:hover{
+  transform: scale(1.125);
+}
+
+.underline::after{
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      /* background-color: #3498db; */
+            background-color: #ffffff;
+      /* transition: width 0.4s ease, left 0.3s ease; */
+      transition: all 0.4s ease;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 9px 1px rgba(0, 140, 255, 0.7);
+}
+
+    .underline:hover::after {
+      width: 100%;
+
+    }
 
 .div-cover-photo{
   display: flex;
@@ -103,28 +126,31 @@ body{
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 10;
 }
 
 
 .toggle-button{
   display: flex;
   align-items: center;
-  border: none;
+  /* border: 1px ridge rgba(255, 255, 255, 0.733); */
   cursor: pointer;
-  background-color: #000000;
+  background: none;
   margin-left: 10px;
   border-radius: 100%;
+  /* border-color: #ffffff; */
+  border: none;
   z-index: 1;
   color: white;
   font-size: 20px;
-  transition: border 0.9s, box-shadow 0.5s;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  transition: box-shadow 0.5s;
+
  }
 
  .toggle-button:hover{
-  background-color: #000000;
-  border: 1px solid rgb(0, 0, 0);
-  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.6);
+  /* box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.6); */
+   box-shadow: 0 0 8px rgba(226, 226, 226, 0.8);
+   transform: scale(1.155);
 }
 
 .toggle-button:active{
@@ -139,7 +165,31 @@ body{
   display: flex;
  }
 
- .profile-icon{
+ @media(min-width: 610px){
+  .socials{
+    display: none;
+  }
+ }
+
+  .socialss{
+  display: flex;
+  justify-content: center;
+ }
+
+ /* @media(max-width: 610px){
+  .socialss{
+    display: none;
+  }
+ }
+
+  @media(max-width: 609px){
+  .socialss{
+    display: none;
+
+  }
+ } */
+
+ .profile-icon-sidebar{
   /* align-items: center;
   display: flex;
   border: none;
@@ -159,7 +209,7 @@ body{
   background-color: rgb(10, 20, 20);
   box-shadow: inset 0 0 2px rgba(190, 190, 190, 0.4);
   margin-left:4px ;
-  margin-right: 4px;
+  /* margin-right: 4px; */
   padding-right: 7px;
   padding-left: 7px;
   padding-top: 2px;
@@ -167,13 +217,48 @@ body{
   color: rgb(255, 255, 255);
   transition: 0.5s;
  }
- 
 
- .profile-icon:hover{
+  .profile-icon:hover{
   background-color: rgb(0, 132, 255);
  }
 
+  .profile-icon-home{
+  /* align-items: center;
+  display: flex;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(10, 20, 20);
+  box-shadow: inset 0 0 2px rgba(190, 190, 190, 0.4);
+  margin-left:2px ;
+  margin-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  color: rgb(143, 12, 12); */
 
+  align-items: center;
+  display: flex;
+  border: none;
+  border-radius: 6px;
+  /* background-color: rgb(10, 20, 20);
+  box-shadow: inset 0 0 2px rgba(190, 190, 190, 0.4); */
+  margin-left:2px ;
+  margin-right: 2px;
+  /* margin-right: 4px; */
+  padding-right: 7px;
+  padding-left: 7px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  font-size: 19px;
+ }
+ 
+
+  .profile-icon-home:hover{
+  color: rgb(0, 174, 255);
+  transform: scale(1.300);
+  transition: 0.3s;
+ }
 
 /* testing
 button.selected{
@@ -185,13 +270,34 @@ button.selected{
   align-items: center;
 }
 
+.anchor-sidebar{
+    box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+  padding: 0.5rem;
+  padding-left: 1rem;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 2rem;
+  font-size: 0.95rem;
+  transition: ease-in-out 0.2s;
+}
+
+.anchor-sidebar:hover{
+  transform: scale(1.020);
+     box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.anchor-sidebar.active{
+  transform: scale(1.020);
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.8);
+}
+
 .div-home{
   text-align: center;
   background-color: rgb(10, 20, 20);
   box-shadow: inset 0 0 2px rgba(190, 190, 190, 0.4);
   border: none;
   border-radius: 6px;
-  margin-right: 4px;
+  margin-right: 7px;
   padding: 4px;
 }
 

@@ -65,3 +65,25 @@ padding-bottom: 6px;
   opacity: 0.5;
   text-decoration: none;
 }
+
+.tsu-height{
+line-height: 5px;
+}
+
+.course{
+  line-height: 20px;
+  margin-bottom: 23px;
+  text-align: justify;
+
+}
+
+@media (max-width: 575px){
+
+  .course{
+  margin-bottom: 2px;
+  }
+}
+
+.year-graduated{
+  font-size: 14px;
+}

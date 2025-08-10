@@ -28,9 +28,11 @@ function updateSidebarVisibility() {
 // Initial check and setup
 updateSidebarVisibility();
 
+
+
+
 // Listen for window resize events to handle changes in screen size
 window.addEventListener('resize', updateSidebarVisibility);
-
 // Toggle sidebar visibility when the button is clicked (only below medium size)
 toggleBtn.addEventListener('click', () => {
   sidebar.classList.toggle('active');
@@ -59,6 +61,35 @@ document.body.addEventListener('click', (event) => {
     listIcon.classList.remove('d-none');
     xIcon.classList.add('d-none');
   }
+});
+
+
+
+// If the specific anchor is clicked, the viewport will move according to specified anchor links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.anchor-sidebar');
+
+const observer = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute('id');
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${id}`) {
+            link.classList.add('active');
+          }
+        });
+      }
+    });
+  },
+  {
+    threshold: 0.3 // Adjust for when the section is considered "in view"
+  }
+);
+
+sections.forEach(section => {
+  observer.observe(section);
 });
 
 
