@@ -1,10 +1,17 @@
-const downloadResume = document.getElementById('downloadResume');
-  downloadResume.addEventListener('click', function(event){
-  const downloadConfirm = confirm("Are you sure you want to download this file?");
-    if (!downloadConfirm) {
-      event.preventDefault(); 
-    }
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('resumeModal');
+
+  if (modal) {
+    modal.addEventListener('show.bs.modal', () => {
+      modal.inert = false;
+      document.activeElement.blur(); // blur trigger button
+    });
+
+    modal.addEventListener('hide.bs.modal', () => {
+      modal.inert = true;
+    });
+  }
+});
 
   // const viewResume = document.getElementById('viewResume');
 

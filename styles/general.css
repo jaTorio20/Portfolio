@@ -1,3 +1,32 @@
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 4px; 
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 4px; 
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/*  scrollbar for firefox*/
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+}
+
 body{
   font-family: Roboto;
   z-index: -100;

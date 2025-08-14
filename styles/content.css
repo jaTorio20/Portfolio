@@ -50,10 +50,6 @@
 
 }
 
-.home-portfolio-header{
-
-  /* text-shadow: 0 6px 5px rgba(255, 255, 255, 0.8); */
-}
 
 .home-portfolio-header {
   background: radial-gradient(ellipse at top, #ffffff, transparent);
@@ -325,7 +321,7 @@ padding-bottom: 160px;
 
 .container-resume{
   /* border-bottom: 1px solid black; */
-  display: flex;
+
   color: #000000;
 }
 

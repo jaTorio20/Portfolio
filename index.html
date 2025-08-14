@@ -326,7 +326,7 @@
     <section class="container-fluid bg-light.bg-gradient" id="resume">
 
       <div class="container-resume container p-2 pt-5 pb-5">
-        <div class="col-lg-12">
+
           <h1>Resume</h1>
           <p>The following document is my resume, outlining my personal information,
              academic achievements, professional experience, skills, and other pertinent details. </p>
@@ -404,11 +404,37 @@
               View
             </a> -->
             <!-- <button class="view-button">View</button> -->
-            <a href="file/Torio_JohnAshley_Resume.pdf" download class="download-button" id="downloadResume">
+            <!-- <a href="file/Torio_JohnAshley_Resume.pdf" download class="download-button" id="downloadResume">
               Download
-            </a>
+            </a> -->
+
+                <button type="button" class="download-button" data-bs-toggle="modal" data-bs-target="#resumeModal">
+                  Download
+                </button>
+
+                <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="Resume" inert>
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="">Resume</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Are you sure you want to download the file?
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      
+                        <a href="file/Torio_JohnAshley_Resume.pdf" download class="btn btn-primary">
+                          Download
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
           </div>
-        </div>
+
       </div>
     </section>
 
@@ -546,7 +572,7 @@
                   </div>
 
                   <div class="row-12 d-flex justify-content-center">
-                    <input type="submit" value="Send">
+                    <button>Submit</button>
                   </div>
                 </form>
 
