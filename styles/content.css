@@ -237,8 +237,8 @@ padding-bottom: 15px;
 }
 .home-button{
   background-color: transparent;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   transition: background-color 1s;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -254,8 +254,8 @@ padding-bottom: 15px;
   color: #000000;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -327,11 +327,6 @@ padding-bottom: 160px;
   /* border-bottom: 1px solid black; */
   display: flex;
   color: #000000;
-}
-
-.container{
-  display: flex;
-
 }
 
 .about-container{
@@ -435,12 +430,12 @@ padding-bottom: 160px;
 
 }
 
-input{
+.contact-input{
   border: none;
   /* border-bottom: 1px solid black; */
   margin-right: 4px;
   background-color: transparent;
-  width: 85%;
+  width: 98%;
   max-width: 700px;
   margin-bottom: 3rem;
   height: 35px;
@@ -450,6 +445,16 @@ input{
   box-shadow: inset 1px -2px 4px rgba(78, 78, 78, 0.7);
   border-radius: 6px;
 }
+
+.contact-input[type="text"], [type="email"]{
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+.contact-input:focus{
+border-style: none;
+}
+
 
 @media (max-width: 730px){
   input{

@@ -199,13 +199,16 @@
                               <div class="testing">
                                 <div>
                                   <a href="#about" class="home-button ">
+                                    
                                     <i class="bi bi-arrow-90deg-down"></i>
-                                    Info
+                                    <span>Info</span>
+                                    
                                   </a>
 
                                   <a href="#resume" class="home-button ">
-                                    <text>CV</text>
+                                   
                                     <i class="bi bi-box-arrow-down"></i>
+                                    <span>CV</span>
                                   </a>
                                 </div>
                               </div>
@@ -322,7 +325,7 @@
  
     <section class="container-fluid bg-light.bg-gradient" id="resume">
 
-      <div class="container-resume container p-2">
+      <div class="container-resume container p-2 pt-5 pb-5">
         <div class="col-lg-12">
           <h1>Resume</h1>
           <p>The following document is my resume, outlining my personal information,
@@ -412,12 +415,20 @@
 
 
     <section class="container-fluid bg-dark" id="project">
-      <div class="container-resume container p-2">
-        <div class="col-lg-8">
+      <div class="container pt-5 pb-5 p-2">
+        <div class="row container-contact-shadow">
+          <div class="col-6">
             <h1>Project</h1>
               <div>
                 To be added soon
               </div>
+          </div>
+          <div class="col-6">
+            <h1>Project</h1>
+              <div>
+                To be added soon
+              </div>
+          </div>
         </div>
       </div>
     </section>
@@ -436,14 +447,11 @@
     </div> -->
 
     <section class="container-fluid bg-light" id="infos">
-      <div class="container-contact container p-2">
-        <div class="col-12">
-            <h1>Contact</h1>
+      <div class="container-contact container p-2 pt-5 pb-5">
 
-            <p> </p>
-
-              <div class="row container-contact-shadow d-flex mb-4">
-
+              <div class="row container-contact-shadow mb-4">
+                <h1>Contact</h1>
+                <p> </p>
                 <div class="col-md-5 col-sm-12">
 
                   <div class="container-contact-logo d-flex">
@@ -507,22 +515,22 @@
                     <div class="col-lg-6 col-sm-12">
                       <div>
                         <label for="name" class="label"><b> Name </b></label><br>
-                        <input type="text" name="text" id="" required>
+                        <input type="text" name="text" id="" class="contact-input" required>
                       </div>
                       <div >
                         <label for="email" class="label"><b> Email </b></label><br>
-                        <input type="email" name="email" required>
+                        <input type="email" name="email" class="contact-input" required>
                       </div>
                     </div>  
 
                     <div class="col-lg-6 col-sm-12">
                       <div>
                         <label for="country" class="label"><b> Country </b></label><br>
-                        <input type="text" class="input">
+                        <input type="text" class="contact-input" >
                       </div>
                       <div class="">
                         <label for="subject" class="label"><b> Subject </b></label><br>
-                        <input type="text" class="input" name="subject"  required>
+                        <input type="text" class="contact-input" name="subject"  required>
                       </div>
 
                     </div>
@@ -542,8 +550,6 @@
                   </div>
                 </form>
 
-
-        </div>
       </div>
     </section>
 

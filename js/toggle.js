@@ -31,7 +31,6 @@ updateSidebarVisibility();
 
 
 window.addEventListener('resize', updateSidebarVisibility);
-// Toggle sidebar visibility when the button is clicked (only below medium size)
 toggleBtn.addEventListener('click', () => {
   sidebar.classList.toggle('active');
   listIcon.classList.toggle('d-none');
