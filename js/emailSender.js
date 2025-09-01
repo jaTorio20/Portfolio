@@ -17,9 +17,9 @@ contactForm.addEventListener('submit', async function (e) {
   submitEmailBtn.disabled = true;
 
   try {
-    const response = await fetch('', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwWXuwwx4gFTROUoG-W6n9ikmGvHptcdNG1goAf3ukA829oAtQW10eOtx91tLElbynAvg/exec', {
       method: 'POST',
-      body: new FormData(contactForm)
+      body: new FormData(contactForm) 
     });
 
     if (!response.ok) throw new Error("Server error");
