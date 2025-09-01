@@ -17,8 +17,9 @@ contactForm.addEventListener('submit', async function (e) {
   submitEmailBtn.disabled = true;
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbwWXuwwx4gFTROUoG-W6n9ikmGvHptcdNG1goAf3ukA829oAtQW10eOtx91tLElbynAvg/exec', {
+    const response = await fetch('https://script.google.com/macros/s/AKfycbwWXuwwx4', {
       method: 'POST',
+      mode: "no-cors",
       body: new FormData(contactForm) 
     });
 
