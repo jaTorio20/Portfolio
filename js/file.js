@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('resumeModal');
+  const resumeModal = document.getElementById('resumeModal');
 
-  if (modal) {
-    modal.addEventListener('show.bs.modal', () => {
-      modal.inert = false;
+  if (resumeModal) {
+    resumeModal.addEventListener('show.bs.modal', () => {
+      resumeModal.inert = false;
       document.activeElement.blur(); // blur trigger button
     });
 
-    modal.addEventListener('hide.bs.modal', () => {
-      modal.inert = true;
+    resumeModal.addEventListener('hide.bs.modal', () => {
+      resumeModal.inert = true;
     });
   }
 });
