@@ -17,7 +17,7 @@ contactForm.addEventListener('submit', async function (e) {
   submitEmailBtn.disabled = true;
 
   try {
-    const response = await fetch('https://script.google.com/macros/s/AKfycbx4J-ZJ_zET0hsEBfTBhAGLu_GEC2xmwRmMnk_uM_MvrMPGh6WkUKILdgq5UUMCsPIFUw/exec', {
+    const response = await fetch('', {
       method: 'POST',
       body: new FormData(contactForm)
     });
@@ -41,4 +41,4 @@ contactForm.addEventListener('submit', async function (e) {
 
 
 // I got this gmail sender by APP Script
-// https://script.google.com/macros/s/AKfycbyEyFL4i0RmtfBcaxOvwZV1cuJD-o__ye77gdnEP2knn4jrdx53yyIEcPFPOxzLfwEixA/exec
+// https://script.google.com/macros/
