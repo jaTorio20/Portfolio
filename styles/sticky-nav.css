@@ -11,6 +11,10 @@
     }
   }
 
+  body.dark-mode .first-btn{
+    color: #ffffff;
+  }
+
 
 
   .toggle-button{
