@@ -5,265 +5,231 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trusted.cdn.com;"> -->
   <meta name="theme-color" content="#333641">
-  <title>Torio Portfolio</title>
+  <title>John Ashley Torio | Software Developer Portfolio</title>
+  <link rel="icon" type="image/png" href="/public/project-images/JA.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="styles/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/sidebar.css">
   <link rel="stylesheet" href="styles/general.css">
-  <link rel="stylesheet" href="styles/content.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/copyright.css">
-
-
-  <link rel="stylesheet" href="styles/content-resume.css">
+  <link rel="stylesheet" href="styles/sticky-nav.css">
+  <link rel="stylesheet" href="styles/resume.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/send-message.css">
+  <link rel="stylesheet" href="styles/infos.css">
+  <link rel="stylesheet" href="styles/project.css">
+  <link rel="stylesheet" href="styles/certificate.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
-<body>
+<body >
 
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top z-10">
+    <div class="container d-flex align-items-center justify-content-between" id="navHeader">
 
-    <div class="div-toggle-button">
-      <button id="toggle-btn" class="toggle-button m-3 " >
-        <!-- <svg id="list-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-        </svg> -->
-        <i id="list-icon" class="bi bi-list"></i>
-        <i id="x-icon" class="x-button bi-x d-none"></i>
+        <div>
+          <a class=" navbar-brand" href="#">JTorio</a>
+        </div>
+
         
-      </button>
-      
-    </div>
+        <div class="ul-header">
+          <ul class="d-flex list-unstyled gap-3 mb-0 nav-link">
+            <li class="modal-navigation"> 
+              <a href="#home" class="d-block anchor-Header" id="">
+              Home
+              </a>
+            </li>
 
-<!-- sidebar -->
-<nav id="sidebar" >
+            <li class="modal-navigation"> 
+              <a href="#project" class="d-block  anchor-Header" id=""> 
+              Project
+              </a>
+            </li>
 
-  <div class="sidebar-container">
-      <div class="div-cover-photo">
-        <img class="cover-photo" src="icons/john-torio.jpg">
+            <li class="modal-navigation"> 
+              <a href="#about" class="d-block  anchor-Header" id="">
+              About
+              </a>
+            </li>
 
-        <div class="cover-fix">
-          <img class="profile-photo" src="icons/john-torio.jfif">
-          <text class="profile-name">John Ashley Torio</text>
-
-
-
-        </div>
-      </div>
-      
-    <ul class="sidebar-items">
-      <!-- <li>
-        <div class="list-items">
-          <div class="div-home">
-            <i class="bi bi-house"></i>
-          </div>
-          <div>
-            <a  class="" href="#">Home</a>
-          </div>
-        </div>
-      </li> -->
-
-      <!-- <li>
-        <div class="list-items">
-                <i class="div-home bi bi-house"></i>
-            <div class="underline">
-              <a  class="" href="#home">
-     
-                Home</a>
-            </div>
-        </div>
-      </li> -->
-
-      <li>
-        <div class="list-items" >
-            <a  class="d-flex anchor-sidebar" href="#home">
-              <div>        
-                <i class="div-home bi bi-house"></i>
-              </div>
-              <div class="underline">
-                Home
-              </div>
-            </a>
-        </div>
-      </li>
-
-      <li >
-        <div class="list-items" >
-              <a class="d-flex anchor-sidebar" href="#about" >
-                <div>
-                  <i class="div-home bi bi-file-person-fill"></i>
-                </div>
-            <div class="underline">
-                About
-            </div>
-            </a>
-        </div>
-      </li>
-
-      <li>
-        <div class="list-items" >
-           <a class="d-flex anchor-sidebar" href="#resume" >
-            <div>
-              <i class="div-home bi bi-card-heading"></i>
-            </div>
-            <div class="underline">
+            <li class="modal-navigation"> 
+              <a href="#resume" class="d-block anchor-Header" id="">
               Resume
+              </a>
+            </li>
+
+            <li class="modal-navigation"> 
+              <a href="#contact" class="d-block  anchor-Header" id=""> 
+              Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex">
+          <div class=" d-flex align-items-center ">
+              <input class="form-check-input visually-hidden" type="checkbox" id="darkModeSwitch">
+              <label for="darkModeSwitch" class="custom-switch ">
+                  <i class="bi bi-sun-fill sun-icon"></i>
+                  <i class="bi bi-moon-stars moon-icon"></i>
+              </label>
+          </div>
+          <div class="div-toggle-button">
+            <div class="first-btn">
+                <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#navModal">
+                  <i class="bi bi-list"></i>
+                </button>
             </div>
-          </a>
-        </div> 
-      </li>
+          </div>
 
-      <li>
-        <div class="list-items">
-            <a class="d-flex anchor-sidebar" href="#project">
-              <div>
-                  <i class="div-home bi bi-kanban-fill"></i>
-              </div>
-              <div class="underline">
-                  Project
-              </div>
-            </a>
-         </div> 
-      </li>
-
-      <li>
-        <div class="list-items">
-            <a class="d-flex anchor-sidebar" href="#infos">
-                <div>
-                  <i class="div-home bi bi-card-checklist"></i>
+        </div>
+    </div>
+  </nav>
+          <div class="modal fade" id="navModal" tabindex="-1" aria-labelledby="navModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="navModalLabel">Navigation</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="underline">
-                  Infos
+                <div class="modal-body">
+                  <ul class="list-unstyled gap-2 mb-0 text-dark ">
+                    <li data-bs-dismiss="modal" class="modal-navigation"> 
+                      <a href="#home" class="d-block text-decoration-none text-dark anchor-Modal">
+                      Home
+                      </a>
+                    </li>
+
+                    <li data-bs-dismiss="modal" class="modal-navigation"> 
+                      <a href="#project" class="d-block text-decoration-none text-dark anchor-Modal">
+                      Project
+                      </a>
+                    </li>
+
+                    <li data-bs-dismiss="modal" class="modal-navigation"> 
+                      <a href="#about" class="d-block text-decoration-none text-dark anchor-Modal">
+                      About
+                      </a>
+                    </li>
+
+                    <li data-bs-dismiss="modal" class="modal-navigation"> 
+                      <a href="#resume" class="d-block text-decoration-none text-dark anchor-Modal">
+                      Resume
+                      </a>
+                    </li>
+
+                    <li data-bs-dismiss="modal" class="modal-navigation"> 
+                      <a href="#contact" class="d-block text-decoration-none text-dark anchor-Modal">
+                      Contact
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-            </a>
-         </div> 
-      </li>
-
-
-
-    </ul>
-  </div>
-</nav>
-<!-- sidebar -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
 
 <!-- About me Content -->
  <main class="main-content">
-    <!--  -->
-    <section class="backgroundd">
-      <div class="container-fluid home-main " id="home">
 
-        <header class="container-home-portfolio d-flex ">
-          <div class="home-portfolio">iPortfolio</div>
-
-            <!-- <div class="socialss">
-
-                <a class="profile-icon-home" href="https://www.facebook.com/johnashley.torio.9/" target="_blank" > 
-                <i class="bi bi-facebook"></i>
-               </a>
-
-
-                <a class="profile-icon-home" href="https://www.linkedin.com/in/john-ashley-torio-a61ab522a/" target="_blank"> 
-                <i class="bi bi-linkedin"></i>
-               </a>
-
-               <a class="profile-icon-home" href="https://www.instagram.com/john_ashley_13?igsh=d3hqejZlbTZmZjM3" target="_blank"> 
-                <i class="bi bi-instagram"></i>
-              </a>
-
-          </div> -->
-
-          <div class="home-portfolio-header">
-            <span class="developer-tag">DEVELOPER</span>
-          </div>
-        </header>
-        
-          <div 
-            class="
-            home-container
-            justify-content-center
-            container
-            ">
-
-                    <div class="
-                      align-content-center
-                      justify-content-sm-start
-                      flex-wrap
-                      container
-                      row
-                      ">
-                          <div class="home-main-details col-md-7 col-sm-12 d-flex justify-content-start 
-                            justify-content-md-center">
-                            <div class="span-developer">
-                              <p class="home-name"> Hello, I am</p>
-                              <p class="home-developer"> John Ashley</p>
-                              <p class="p-break">A passionate Web and Mobile Developer and Designer
-                              </p>
-                              <div class="testing">
-                                <div>
-                                  <a href="#about" class="home-button ">
-                                    
-                                    <i class="bi bi-arrow-90deg-down"></i>
-                                    <span>Info</span>
-                                    
-                                  </a>
-
-                                  <a href="#resume" class="home-button ">
-                                   
-                                    <i class="bi bi-box-arrow-down"></i>
-                                    <span>CV</span>
-                                  </a>
-                                </div>
-                              </div>
-                              
-                            </div>
-                          </div>
-
-
-                          <!-- bottom box -->
-                          <div class="justify-content-center d-flex home-bottom">
-                            <div class="d-flex home-box col-4 justify-content-center"></div> 
-                          </div>
-
-                          
-                          <div class="socialss">
-
-                                <a class="profile-icon-home" href="https://www.facebook.com/johnashley.torio.9/" target="_blank" > 
-                                <i class="bi bi-facebook"></i>
-                              </a>
-
-
-                                <a class="profile-icon-home" href="https://www.linkedin.com/in/john-ashley-torio-a61ab522a/" target="_blank"> 
-                                <i class="bi bi-linkedin"></i>
-                              </a>
-
-                              <a class="profile-icon-home" href="https://www.instagram.com/john_ashley_13?igsh=d3hqejZlbTZmZjM3" target="_blank"> 
-                                <i class="bi bi-instagram"></i>
-                              </a>
-
-                          </div>
-                    </div>
-          </div>
+<section id="home" class="container mt-5 mb-5 py-5 d-flex justify-content-center home-section global-reveal">
+    <div class="row g-3 d-flex justify-content-center">
+      <div class="col-lg-6 col-md-12 mb-5">
+        <h1 class="display-4 fw-bold mb-3 ">John Ashley Torio</h1>
+          <p class="lead text-secondary mb-4">
+            <span class="home-web-dev fw-bold"> Web Developer </span> <br>
+            Passionate about creating responsive, dynamic, and user-friendly websites and applications.
+          </p>
+        <div class="d-flex gap-3 ">
+          <a href="#resume" class="home-btn btn btn-dark shadow-sm">View Resume</a>
+          <a href="#project" class="home-btn btn btn-outline-dark home-btn-project shadow-sm">View Project</a>
+        </div>
       </div>
-    </section>
-      <!--  -->
+
+      <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center">
+        <div class=" home-image-wrapper">
+          <img src="public/project-images/torio.jpg" alt="Hero Illustration" class="home-image" >
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="container global-reveal" id="project">
+  
+  <h2 class="display-6 fw-bold mb-3">PERSONAL PROJECT </h2>
+  <div class="row g-3 justify-content-center">
+    <div class="col-md-9 ">
+      <a href="https://pinoycampground.onrender.com/" target="_blank" class="text-decoration-none cursor-pointer ">
+        <div class="card border-1 h-100 p-3 shadow-sm">
+          <img src="public/project-images/campground-image.png" class="card-img-top shadow-sm rounded-3" alt="App Screenshot">
+          <div class="card-body">
+            <h5 class="card-title">PinoyCampground</h5>
+            <p class="card-text text-secondary">
+              A full-featured campground app with interactive map, campground creation, clustering of locations, Google login, email-based password reset, and OTP verification for account creation.
+            </p>
+            <div>
+              <span class="badge bg-light text-dark me-1">Express</span>
+              <span class="badge bg-light text-dark me-1">Node.js</span>
+              <span class="badge bg-light text-dark me-1">Bootstrap</span>
+              <span class="badge bg-light text-dark me-1">MongoDB</span>
+              <span class="badge bg-light text-dark me-1">EJS</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- <div class="col-md-5">
+      <a href="https://pinoycampground.onrender.com/" target="_blank" class="text-decoration-none cursor-pointer">
+        <div class="card border-0 h-100 bg-dark p-3 shadow-sm">
+          <img src="public/project-images/campground-image.png" class="card-img-top shadow-sm rounded-3" alt="App Screenshot">
+          <div class="card-body">
+            <h5 class="card-title text-light">PinoyCampground</h5>
+            <p class="card-text text-secondary">
+              A full-featured campground app with interactive map, campground creation, clustering of locations, Google login, email-based password reset, and OTP verification for account creation.
+            </p>
+            <div>
+              <span class="badge bg-light text-dark me-1">Express</span>
+              <span class="badge bg-light text-dark me-1">Node.js</span>
+              <span class="badge bg-light text-dark me-1">Bootstrap</span>
+              <span class="badge bg-light text-dark me-1">MongoDB</span>
+              <span class="badge bg-light text-dark me-1">EJS</span>
+            </div>
+          </div>
+        </div>
+      </a> -->
+    </div>
+</section>
 
 
-    <section class="container-fluid bg-light" id="about">
-      <!-- bg-gradient -->
-      <div class="container p-2 ">
+    <section class="container global-reveal" id="about">
+      <div class=" p-2 ">
           <div class="about-container">
-              <div class="about-me">
-                <h2>About</h2>
+              <div class="">
+                <h1 class="display-6 fw-bold mb-3">About</h1>
               </div>
 
-              <div class="about-me pb-4 ">
-                <p class="about-paragraph">Hi, <b>I'm John Ashley Torio,</b> a 4th-year student specializing in web and mobile application. I am passionate about building dynamic, user-friendly websites and
-                applications using technologies like HTML, CSS, JavaScript, and frameworks like Bootstrap
+              <div class=" pb-4 ">
+                <p class="about-paragraph text-secondary">
+                  Hi, <b>I'm John Ashley Torio,</b> a web and mobile application 
+                  developer passionate about building dynamic, user-friendly, 
+                  and efficient digital solutions. I specialize in creating 
+                  responsive front-end interfaces using HTML, CSS, JavaScript, 
+                  Bootstrap, and React, and developing robust back-end systems 
+                  with Node.js, Express.js, EJS, and databases like MongoDB and 
+                  MySQL.
                 </p>
               </div>
 
               <div class="row ">
                 <div class="content-about-image col-md-10 col-lg-4 mb-5 mt-2">
-                  <img src="icons/john-torio.jfif" class="about-image img-fluid rounded " alt="...">
+                  <img src="icons/john-ashley.jpg" class="about-image img-fluid rounded " alt="...">
                 </div>
                 <div class="col-lg-8 col-md-12 "> 
                   <div class="mb-4">
@@ -288,33 +254,22 @@
                           <text>+63 9568454891</text></li>
 
                           <li><b>Address:</b>
-                          <text>Capas, Tarlac City, Philippines</text></li>
+                          <text>Capas, Tarlac, Philippines</text></li>
                         </ul>
 
                       </div>
                       <div class="col-lg-6 col-md-12 mb-4">
                         <ul class="about-details">
                           <li><b>Degree:</b>
-                          <text>Bachelor's of Science in Information Technology (BSIT)</text></li>
+                          <text>Bachelor's of Science in Information Technology - Specialized in Web and Mobile Application</text></li>
 
                           <li><b>Email:</b>
                           <text>johntorio2422@gmail.com</text></li>
-
-                          <li><b>Freelancing:</b>
-                          <text>Available</text></li>
                         </ul>
 
                       </div>
                     </div>
-                    <p class="about-third-paragraph">
-                      As a <b>Fresh Graduate</b> specializing in web and mobile application development,
-                      I am eager to explore the endless possibilities that technology offers.
-                        My learning journey has been driven by curiosity and a passion for creating
-                        user-friendly and dynamic web solutions. While I am still in the early stages of
-                          my career, I am constantly honing my skills in <b>HTML, CSS, BootStrap Framework, JavaScript, and back-end
-                          programming like PHP and MySQL.</b> I take pride in my ability to adapt and learn quickly,
-                            and I look forward to applying my knowledge to meaningful projects in the future.
-                    </p>
+
                 </div>
               </div>
 
@@ -322,325 +277,233 @@
           </div>
       </div>
     </section>
-    <!-- About me Content -->
  
-    <section class="container-fluid bg-light.bg-gradient" id="resume">
+ 
+  <section id="resume" class="container-fluid py-5 global-reveal">
+    <div class="container py-5">
+      <h1 class="text-center display-6 fw-bold mb-3">Resume</h1>
+      <p class="text-center text-secondary mb-5">
+        The following document outlines my personal information, academic achievements, professional experience, skills, and other pertinent details.
+      </p>
 
-      <div class="container-resume container p-2 pt-5 pb-5">
+      <div class="row g-4 justify-content-center">
+        <!-- Left Column -->
+        <div class="col-lg-6 resume-col">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100 ">
+            <h3 class="mb-3">Profile Summary</h3>
+            <p class="">
+              I am John Ashley Torio from Tarlac State University, 
+              a passionate Web and Mobile Application Developer skilled in 
+              <b>HTML5, CSS3, JavaScript, Bootstrap, React, Node.js, Express, and MongoDB</b>. 
+              I enjoy building responsive, user-centered applications,
+              collaborating on projects, and continuously learning to enhance my craft
+                in the field of information technology.
+            </p>
+            <h3 class="mt-4 mb-2">Technical Skills</h3>
+            <p><b>Programming Languages:</b> HTML5, CSS3, JavaScript</p>
+            <p><b>Frameworks & Libraries:</b> Express.js, Node.js, React (basic), Bootstrap, EJS</p>
+            <p><b>Databases:</b> MongoDB, MySQL</p>
+            <p><b>Tools:</b> Git, GitHub, Postman, VS Code, Ngrok, XAMPP</p>
 
-          <h1>Resume</h1>
-          <p>The following document is my resume, outlining my personal information,
-             academic achievements, professional experience, skills, and other pertinent details. </p>
+            <h3 class="mt-4 mb-2">Skills</h3>
+            <ul class="list-unstyled text-secondary">
+              <li class="mb-2"><b>Web Development:</b> Building responsive, full-stack web applications using modern JavaScript frameworks.</li>
+              <li class="mb-2"><b>Frontend Design:</b> Creating intuitive user interfaces with HTML, CSS, Bootstrap, and React.</li>
+              <li class="mb-2"><b>Backend Development:</b> Developing RESTful APIs and dynamic pages using Node.js, Express.js, and EJS.</li>
+              <li class="mb-2"><b>Database Management:</b> Designing and integrating data using MySQL and MongoDB.</li>
+              <li class="mb-2"><b>Troubleshooting:</b> Diagnosing and resolving code and system issues efficiently.</li>
+            </ul>
 
-              <div class="row justify-content-center">
-                <div class="col-lg-6">
-                  <h3>ABOUT ME</h3>
-                  <p>
-                    I am John Ashley Torio of Tarlac State University a passionate and dedicated Fresh Graduate 
-                    specializing in Web and Mobile Application, currently looking for professional job, eager to build a strong foundation in 
-                    development. My current skills include HTML5, CSS3, Bootstrap, JavaScript, and MySQL. My passion for 
-                    learning drives me to seek personal growth, and I am eager to grow as a professional, collaborate with others, 
-                    and apply my skills in real-time projects, preparing for a successful career in the field of information technology. 
-                  </p>
-
-                  <h3>TECHNICAL SKILLS</h3>
-                  <p> <b>Programming Languages:</b> HTML5, CSS3, JavaScript</p>
-                  <p> <b> Frameworks:</b> Bootstrap, CodeIgniter</p>
-                  <p> <b>Tools:</b> Git, GitHub, Visual Studio Code, Ngrok, XAMPP </p>
-                  <p> <b>Database:</b> MySQL</p>
-
-                  <h3>SKILLS</h3>
-                  <ul>
-                    <li> 
-                      <p>
-                        <b>Web Development:</b> 
-                        Building responsive, functional, 
-                        and user-friendly websites. 
-                      </p>
-                    </li>
-
-                    <li> 
-                      <p>
-                        <b>Web Design:</b> 
-                        Designing intuitive user interfaces using HTML, CSS, and Bootstrap. 
-                     </p>
-                    </li>
-
-                    <li> 
-                      <p>
-                        <b>Troubleshooting:</b> 
-                          Diagnosing and resolving code errors and system configuration issues. 
-                        </p>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="col-lg-6">
-                  <h3>CONTACT</h3>
-                  <p><b>Email:</b> johntorio2422@gmail.com</p>
-                  <p><b>Contact no:</b> N/A</p>
-                  <p><b>Address:</b> Capas, Tarlac</p>
-                  
-                  <h3> EDUCATION</h3>
-                  <div class="row justify-content-between">
-                    <div class="col-sm-8"> 
-                      <p class="course"><b>Bachelor of Science in Information Technology, Specialized
-                         in Web and Mobile Application</b></p>
-                    </div>
-
-                    <div class="col-sm-4 d-flex justify-content-start justify-content-sm-end">
-                      <p class="year-graduated"> <i> -2021 - 2025 </i></p>
-                    </div>
-                  </div>
-                  <p class="tsu-height"> <b>Tarlac State University</b> </p>
-                  <p class="tsu-height"><span><i>Honors graduate &#45; Cum Laude</i></span></p>
-
-
-                </div>
-
-              </div>
-
-          <div>
-            <!-- <a href="file/resumePng.png" class="view-button" target="" id="viewResume">
-              View
-            </a> -->
-            <!-- <button class="view-button">View</button> -->
-            <!-- <a href="file/Torio_JohnAshley_Resume.pdf" download class="download-button" id="downloadResume">
-              Download
-            </a> -->
-
-                <button type="button" class="download-button" data-bs-toggle="modal" data-bs-target="#resumeModal">
-                  Download
-                </button>
-
-                <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="Resume" inert>
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="">Resume</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        Are you sure you want to download the file?
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      
-                        <a href="file/Torio_JohnAshley_Resume.pdf" download class="btn btn-primary">
-                          Download
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-          </div>
-
-      </div>
-    </section>
-
-
-
-    <section class="container-fluid bg-dark" id="project">
-      <div class="container pt-5 pb-5 p-2">
-        <div class="row container-contact-shadow">
-          <div class="col-6">
-            <h1>Project</h1>
-              <div>
-                To be added soon
-              </div>
-          </div>
-          <div class="col-6">
-            <h1>Project</h1>
-              <div>
-                To be added soon
-              </div>
           </div>
         </div>
-      </div>
-    </section>
 
+        <!-- Right Column -->
+        <div class="col-lg-6 resume-col">
+          <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+            <h3 class="mb-3">Contact</h3>
+            <p class=""><b>Email:</b> johntorio2422@gmail.com</p>
+            <p class=""><b>Contact no:</b> N/A</p>
+            <p class=""><b>Address:</b> Capas, Tarlac</p>
 
-
-    <!-- <div id="container-fluid bg-dark">
-      <div class="container-resume container p-2">
-        <div class="col-lg-8">
-          <h1>Services</h1>
-            <div>
-              To be added soon
+            <h3 class="mt-4 mb-2">Education</h3>
+            <div class="d-flex justify-content-between align-items-start mb-2">
+              <p class="mb-0 ">
+                <b>Bachelor of Science in Information Technology, Specialized in Web and Mobile Application</b>
+              </p>
+              <p class="mb-0 text-muted fst-italic">2021 - 2025</p>
             </div>
+            <p class="mb-0"><b>Tarlac State University</b></p>
+            <p class=" fst-italic">Honors Graduate - Cum Laude</p>
+          </div>
         </div>
       </div>
-    </div> -->
 
-    <section class="container-fluid bg-light" id="infos">
+      <!-- Download Button -->
+      <div class="text-center mt-5">
+        <button type="button" class="btn btn-dark btn-responsive shadow-sm" data-bs-toggle="modal" data-bs-target="#resumeModal">
+          Download Resume
+        </button>
+      </div>
+
+      <!-- Resume Modal -->
+      <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="Resume" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content rounded-4 shadow-sm">
+            <div class="modal-header bg-light">
+              <h5 class="modal-title">Download Resume</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-secondary">
+              Are you sure you want to download the file?
+            </div>
+            <div class="modal-footer bg-light">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="file/Torio_JohnAshley_Resume.pdf" download class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section class="container text-dark global-reveal" id="certificate">
+  <div class="pt-5 pb-5 p-2">
+    <div class="row">
+      <h1 class="mb-4 display-6 fw-bold mb-3">Certificates & Training</h1>
+
+      <div class="col-sm-12 col-lg-6">
+        <div class="certificate-box mb-4 shadow-sm">
+          <img src="/file/WebDev-Bootcamp.jpg" alt="Web Development Bootcamp Certificate" class="img-fluid rounded certificate-img">
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-6">
+        <div class="certificate-box mb-4 shadow-sm">
+          <img src="/file/ccnaCert.jpg" alt="CCNA Certificate" class="img-fluid rounded certificate-img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section class="container global-reveal" id="contact">
       <div class="container-contact container p-2 pt-5 pb-5">
+        <div class="row container-contact-shadow mb-4">
+          <h1 class="text-center display-6 fw-bold mb-3">Details</h1>
+          <p> </p>
+          <div class="col-md-5 col-sm-12">
 
-              <div class="row container-contact-shadow mb-4">
-                <h1>Contact</h1>
-                <p> </p>
-                <div class="col-md-5 col-sm-12">
-
-                  <div class="container-contact-logo d-flex">
-                    <div class="contact-logo">
-                      <i class="contact-icon-logo bi bi-geo-alt"> </i>
-                    </div>
-
-                    <div class="contact-logo-title">
-                      <span><b> Address </b></span>
-
-                      <span class="address-logo-text">Sto. Domingo 2nd, Capas, Tarlac</span>
-                    </div>
-                  </div>
-
-                  <div class="container-contact-logo d-flex">
-                    <div class="contact-logo">
-                      <i class="contact-icon-logo bi bi-envelope-at"></i>
-                    </div>
-
-                    <div class="contact-logo-title">
-                      <span><b> Email </b></span>
-
-                      <span class="address-logo-text">johnashley132002@gmail.com</span>
-                    </div>
-                  </div>
-
-                  <div class="container-contact-logo d-flex">
-                    <div class="contact-logo">
-                      <i class="contact-icon-logo bi bi-telephone-inbound"></i>
-                    </div>
-
-                    <div class="contact-logo-title">
-                      <span><b> Phone No. </b></span>
-
-                      <span class="address-logo-text">-</span>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="col-md-7 d-flex justify-content-center">
-
-                  <iframe class="map" 
-                  iframe width="770" 
-                  height="360" 
-                  frameborder="0" 
-                  scrolling="no" 
-                  marginheight="0" 
-                  marginwidth="0" 
-                  src="https://maps.google.com/maps?q=capas%20tarlac%20philippines%20municipal%20hall&t=m&z=15&ie=UTF8&iwloc=B&output=embed">
-                    map
-                  </iframe>
-                  <a href="https://embed-maps.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">Google Maps Embed</a>
-                
-                </div>
+            <div class="container-contact-logo d-flex">
+              <div class="contact-logo">
+                <i class="contact-icon-logo bi bi-geo-alt"> </i>
               </div>
 
+              <div class="contact-logo-title">
+                <span><b> Address </b></span>
 
-                <form class="contact-form row pt-4" id="contactForm" action="#">
+                <span class="address-logo-text">Sto. Domingo 2nd, Capas, Tarlac</span>
+              </div>
+            </div>
 
-                    <div class="col-lg-6 col-sm-12">
-                      <div>
-                        <label for="name" class="label"><b> Name </b></label><br>
-                        <input type="text" name="name" id="" class="contact-input" required>
-                      </div>
-                      <div >
-                        <label for="email" class="label"><b> Email </b></label><br>
-                        <input type="email" name="email" class="contact-input" required>
-                      </div>
-                    </div>  
+            <div class="container-contact-logo d-flex">
+              <div class="contact-logo">
+                <i class="contact-icon-logo bi bi-envelope-at"></i>
+              </div>
 
-                    <div class="col-lg-6 col-sm-12">
-                      <div>
-                        <label for="country" class="label"><b> Country </b></label><br>
-                        <input type="text" class="contact-input" name="country" placeholder="Country (Optional)">
-                      </div>
-                      <div class="">
-                        <label for="subject" class="label"><b> Subject </b></label><br>
-                        <input type="text" class="contact-input" name="subject"  required>
-                      </div>
+              <div class="contact-logo-title">
+                <span><b> Email </b></span>
 
-                    </div>
+                <span class="address-logo-text">johnashley132002@gmail.com</span>
+              </div>
+            </div>
 
+            <div class="container-contact-logo d-flex">
+              <div class="contact-logo">
+                <i class="contact-icon-logo bi bi-telephone-inbound"></i>
+              </div>
 
-                  <!-- <div class="row-12 d-flex">
+              <div class="contact-logo-title">
+                <span><b> Phone No.  </b></span>
 
-                  </div> -->
+                <span class="address-logo-text">+63 9568454891</span>
+              </div>
+            </div>
 
-                  <div class="row-12 d-flex justify-content-center contact-message">
-                    <label for="message" class="label"></label>
-                    <textarea name="message" id="" placeholder="Message" required></textarea>
-                  </div>
+          </div>
 
-                  <div class="row-12 d-flex justify-content-center">
-                    <button type="submit" class="download-button" id="submitEmail">Submit</button>
-                          <!-- Email sent successfully! -->
-                        <div class="modal fade" id="successEMail" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title" id="successModalLabel">Success</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Your message has been sent successfully!
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+          <div class="col-md-7 d-flex justify-content-center">
 
-                        <!-- Failed email or no network -->
-                        <div class="modal fade" id="failedEMail" tabindex="-1" aria-labelledby="failedModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header bg-danger text-white">
-                                <h5 class="modal-title" id="failedModalLabel">Error</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body">
-                                Please check your internet connection and try again
-                              </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                  </div>
-
-
-
-                </form>
-
+            <iframe class="map" 
+            iframe width="770" 
+            height="360" 
+            frameborder="0" 
+            scrolling="no" 
+            marginheight="0" 
+            marginwidth="0" 
+            src="https://maps.google.com/maps?q=capas%20tarlac%20philippines%20municipal%20hall&t=m&z=15&ie=UTF8&iwloc=B&output=embed">
+              map
+            </iframe>
+            <a href="https://embed-maps.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">Google Maps Embed</a>               
+          </div>
+        </div>               
       </div>
     </section>
 
-    <footer class="container-fluid bg-light.bg-gradient">
-      <div class="copyright">&copy;&nbsp;<span id="year"></span> &nbsp;John Ashley Torio. All rights reserved.</div>
+    <section class="container global-reveal" id="sendMessage">
+      <form class="contact-form row pt-4" id="contactForm" action="#">
+        
+        <div class="col-lg-6 col-sm-12 mb-3">
+          <label for="name" class="label"><b>Name</b></label>
+          <input type="text" name="name" class="contact-input" required>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 mb-3">
+          <label for="email" class="label"><b>Email</b></label>
+          <input type="email" name="email" class="contact-input" required>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 mb-3">
+          <label for="country" class="label"><b>Country</b></label>
+          <input type="text" name="country" class="contact-input" placeholder="Optional">
+        </div>
+
+        <div class="col-lg-6 col-sm-12 mb-3">
+          <label for="subject" class="label"><b>Subject</b></label>
+          <input type="text" name="subject" class="contact-input" required>
+        </div>
+
+        <div class="col-12 mb-3">
+          <label for="message" class="label"><b>Message</b></label>
+          <textarea name="message" class="contact-input" placeholder="Your message" required></textarea>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+          <button type="submit" class="download-button btn btn-dark" id="submitEmail">Submit</button>
+        </div>
+
+      </form>
+    </section>
+
+
+    <footer class="container-fluid ">
+      <div class="copyright footer-text">&copy;&nbsp;<span id="year"></span> &nbsp;John Ashley Torio. All rights reserved.</div>
     </footer>
-
-
-
-    <!-- <div id="content">
-      
-      <div class="container">
-        <h1>Welcome to the Content Area</h1>
-        <p>This is the main content of the page. Click the button to toggle the sidebar.</p>
-      </div>
-    </div> -->
   </main>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-<script src="js/toggle.js"></script>
-<script src="js/file.js"></script>
-<script src="js/copyright.js"></script>
-<script src="js/emailSender.js"></script>
-<script src="styles/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/toggle.js"></script>
+    <script src="js/file.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="js/emailSender.js"></script>
+    <script src="js/navHeader.js"></script>
+    <script src="js/sectionProject.js"></script>
+    <script src="js/darkModeSwitch.js"></script>
+    <script src="styles/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

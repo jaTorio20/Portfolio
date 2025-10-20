@@ -1,0 +1,97 @@
+/* Send Message Section */
+#sendMessage {
+  color: #212529;
+  padding: 5rem 0;
+  animation: fadeInUp 0.8s ease-out;
+}
+body.dark-mode #sendMessage label {
+  color: #E4E6EB;
+
+}
+
+/* Labels */
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #343a40;
+}
+
+/* Inputs & Textarea */
+.contact-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+body.dark-mode .contact-input {
+  border:none;
+}
+
+
+body.dark-mode .contact-input {
+  background-color: #1f1f1f;
+  color: #E4E6EB;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #343a40;
+  box-shadow: 0 0 8px rgba(52, 58, 64, 0.15);
+}
+body.dark-mode .contact-input:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.336);
+}
+
+
+textarea.contact-input {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.download-button {
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  opacity: 0.85;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 575px) {
+  #sendMessage {
+    padding: 2rem 1rem;
+  }
+
+  .download-button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

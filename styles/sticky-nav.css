@@ -1,0 +1,115 @@
+/* ############################################ */
+  .div-toggle-button{ 
+    z-index: 10;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 650px) {
+      .first-btn{
+      display: none;
+    }
+  }
+
+
+
+  .toggle-button{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+
+    border-radius: 100%;
+    border: none;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: box-shadow 0.5s;
+
+  }
+
+  .toggle-button:hover{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+    transform: scale(1.155);
+  }
+
+  .toggle-button:active{
+    transition: 0.9s;
+  }
+
+
+  #navHeader{
+    z-index: 0;
+    height: 3rem;
+    border-radius: 5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    background-color: rgba(255, 255, 255, 0.7); 
+  }
+  body.dark-mode #navHeader{
+    background-color: rgb(18, 18, 18); 
+  }
+
+  .navShadow{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+    background-color: rgb(255, 255, 255);
+  }
+  body.dark-mode .navShadow{
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+
+  }
+
+  @media(max-width: 650px){
+  .ul-header{
+  display: none;
+  }
+  }
+
+
+/* <<<<< Modal navigation >>>> */
+  .modal-navigation{
+    padding: 0.5rem;
+    transition: 0.3;
+    
+  }
+  .modal-navigation:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  body.dark-mode .modal-navigation:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .anchor-Header{
+    text-decoration: none;
+    transition: all 0.2s;
+    color: #000000;
+  }
+  body.dark-mode .anchor-Header {
+    color: #ffffff;
+  }
+
+  .anchor-Header.active{
+    text-decoration: underline;
+    font-weight: bold;
+    transform: scale(1.200);
+  }
+
+  .anchor-Modal{
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .anchor-Modal.active{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+
+  body.dark-mode .navbar .navbar-brand {
+    color: #ffffff;
+  }
+
+
+

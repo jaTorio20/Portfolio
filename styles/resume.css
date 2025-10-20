@@ -1,0 +1,68 @@
+#resume {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+#resume h3 {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.5rem;
+  color: #343a40;
+}
+body.dark-mode #resume h3 {
+  color: #E4E6EB ;
+}
+
+#resume p,
+#resume ul li {
+  color: #495057;
+  line-height: 1.6;
+}
+body.dark-mode #resume p,
+body.dark-mode #resume ul li {
+  color: #93a0aa;
+  line-height: 1.6;
+}
+
+#resume ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Cards */
+#resume .card {
+
+  transition: all 0.3s ease;
+}
+
+#resume .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons  */
+.btn-responsive {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-responsive:hover {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 992px) {
+  .btn-responsive {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

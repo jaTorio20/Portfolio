@@ -29,6 +29,90 @@
 
 body{
   font-family: Roboto;
-  z-index: -100;
-  background: none;
+  transition: 0.5s ease;
 }
+
+/* Initial hidden state */
+.global-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+/* When visible in viewport */
+.global-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ####################################### DARK SWITCH*/
+/* Dark Mode Styles for toggling  */
+body.dark-mode .toggler-icon {
+  background-color: #e0e1e2;
+}
+
+body.dark-mode .custom-toggler {
+  border-color: #b0b3b8;
+}
+
+/* ########################### DARK MODE SWITCH */
+.custom-switch {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  background-color: #e9ecef;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+  transition: background-color 0.3s ease;
+  
+}
+
+
+.custom-switch .sun-icon,
+.custom-switch .moon-icon {
+  font-size: 14px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Default light mode */
+.custom-switch .moon-icon {
+  opacity: 0;
+  color: #fffb00;
+   text-shadow: 0 0px 8px rgba(236, 193, 2, 0.7);
+}
+
+/* If toggled */
+#darkModeSwitch:checked + .custom-switch {
+  background-color: #4e4e4e;
+}
+
+#darkModeSwitch:checked + .custom-switch .sun-icon {
+  opacity: 0;
+}
+
+#darkModeSwitch:checked + .custom-switch .moon-icon {
+  opacity: 1;
+}
+
+/* ####################### NAVBAR DARKMODE */
+  body.dark-mode {
+    background-color: #121212;
+    color: #E4E6EB;
+    transition: 0.5s ease;
+  }
+
+
+
+  body.dark-mode .card {
+    background-color: #1f1f1f;
+    color: #E4E6EB;
+    box-shadow: 0 1px 8px rgba(172, 166, 166, 0.404);
+  }
+
+
+
+
