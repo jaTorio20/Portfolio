@@ -5,10 +5,16 @@
     align-items: center;
   }
 
-  @media (min-width: 650px) {
+  @media (min-width: 800px) {
       .first-btn{
-      display: none;
+      display: none !important;
     }
+  }
+
+    @media(max-width: 799px){
+  .ul-header{
+  display: none;
+  }
   }
 
   body.dark-mode .first-btn{
@@ -64,11 +70,7 @@
 
   }
 
-  @media(max-width: 650px){
-  .ul-header{
-  display: none;
-  }
-  }
+
 
 
 /* <<<<< Modal navigation >>>> */
